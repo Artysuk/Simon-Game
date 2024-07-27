@@ -14,14 +14,7 @@ $(document).ready(function () {
         clicked = true;
         }
     });
-
-    $("html").on("click touchstart",function(){
-        if(!clicked){
-
-        nextSequence();
-        clicked = true;
-        }
-    });
+    
 
     function playSound(randomChosenColour){
         let audio = new Audio(`./sounds/${randomChosenColour}.mp3`)
