@@ -14,8 +14,8 @@ $(document).ready(function () {
         clicked = true;
         }
     });
-    
-    $("body").on("click",function(){
+
+    $("html").on("click touchstart",function(){
         if(!clicked){
 
         nextSequence();
