@@ -94,7 +94,7 @@ $(document).ready(function () {
     }
 
 
-    $("body").on("click",function (event) {
+    $("body").on("click touchstart",function (event) {
 
         let userChosenColour = event.target.id;
         userClickedPattern.push(userChosenColour);
