@@ -15,7 +15,7 @@ $(document).ready(function () {
         }
     });
     
-    $("html").on("click",function(){
+    $("body").on("click",function(){
         if(!clicked){
 
         nextSequence();
