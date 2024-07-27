@@ -14,6 +14,13 @@ $(document).ready(function () {
         clicked = true;
         }
     });
+    $("html").on("touchend",function(){
+        if(!clicked){
+
+        nextSequence();
+        clicked = true;
+        }
+    });
     
 
     function playSound(randomChosenColour){
@@ -87,7 +94,7 @@ $(document).ready(function () {
     }
 
 
-    $("body").on("click touchstart",function (event) {
+    $("body").on("click touchend",function (event) {
 
         let userChosenColour = event.target.id;
         userClickedPattern.push(userChosenColour);
