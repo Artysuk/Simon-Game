@@ -14,14 +14,6 @@ $(document).ready(function () {
         clicked = true;
         }
     });
-    $("html").on("touchend",function(){
-        if(!clicked){
-
-        nextSequence();
-        clicked = true;
-        }
-    });
-    
 
     function playSound(randomChosenColour){
         let audio = new Audio(`./sounds/${randomChosenColour}.mp3`)
